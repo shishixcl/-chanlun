@@ -471,6 +471,7 @@ class Seg:
         print(self.vertex)
         print( self.getrange() )
         print(df1.iloc[self.vertex[-1],3])
+    #向上的线段，开始的index和低点的value ,到结束的index，高点的value
     def lines(self):#lines :d==1 ==> [(index in df1 of starting
         #,low of line),(index of end ,high of line)],
         #d==-1 ==>[(,high of line),(,low of line)]
