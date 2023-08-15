@@ -65,7 +65,7 @@ def buy_sell(INDEX,data_dir,debug=1):
        # print(len(df))    
         if len(df)==temp_len:
             break
-            
+           
     df= df.reset_index(drop=True)  
     #get difenxing and dingfenxing
     ul=[0]
@@ -101,6 +101,7 @@ def buy_sell(INDEX,data_dir,debug=1):
         print('error!')
         return ;
     #remove those within 3 bars
+    #df1是分型的列表
     df1=df1.reset_index(drop=True)
     global od_list#od_list are the index of df1 whose corresponding point are fenxing extreme vertex
     
